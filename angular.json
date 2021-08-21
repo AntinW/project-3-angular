@@ -27,6 +27,7 @@
               "src/assets"
             ],
             "styles": [
+              "C:/Users/PC/Project3-Website/node_modules/bulma/css/bulma.css",
               "src/styles.css"
             ],
             "scripts": []
