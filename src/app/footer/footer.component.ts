@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-footer',
   template:`
-    <footer class="footer is-dark">
+    <footer class="footer">
       <div class="container content has-text-centered is-dark">
       
       <a class="button is-medium is-facebook">

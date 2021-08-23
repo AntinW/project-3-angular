@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-header',
   template:`
 
-  <div class="navbar is-dark">
+  <div class="navbar is-danger">
 
       <div class="navbar-brand">
         <a class="navbar-item">
@@ -16,9 +16,21 @@ import { Component, OnInit } from '@angular/core';
         <div class="navbar-start ">
           <a class="navbar-item" routerLink="/">Home</a>
           <a class="navbar-item" routerLink="/gallery-page">Gallery</a>
-        
         </div>
       </div>
+
+    <div class="search-bar-end">
+      <div class ="search-bar">
+        <input class="search-txt" type ="text" name="" placeholder="Type something">
+          <a class ="search-btn" href="#">
+            <i class="fas fa-search"></i>
+           </a>
+      </div>
+    </div>
+
+   
+
+
     </div>
     `,
 
