@@ -4,7 +4,7 @@
     top: 20%;
     left:83%;
     transform: translate(-50%, -20%);
-    background: hsl(308, 82%, 66%);
+    background: hsl(330, 100%, 74%);
     height: 45px;
     border-radius: 40px;
     padding: 3px;
@@ -44,4 +44,7 @@
     width: 0px;
 }
 
-
+.footer2{
+    background-color: #f14668 ;
+    padding: 3rem 1.5rem 6rem;
+  }
