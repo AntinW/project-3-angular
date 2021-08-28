@@ -22,4 +22,10 @@ describe('GalleryPageComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`should have as title 'Gallery Page'`, () => {
+    const fixture = TestBed.createComponent(GalleryPageComponent);
+    const component = fixture.componentInstance;
+    expect(component.title).toEqual('Gallery Page');
+  });
 });

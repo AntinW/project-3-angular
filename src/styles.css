@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata");
+
 /*Search Bar*/
 .search-bar{
     position: absolute;
@@ -48,3 +50,16 @@
     background-color: #f14668 ;
     padding: 3rem 1.5rem 6rem;
   }
+
+html{
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+    font-family: "Crimson", sans-serif;
+    color: black;
+
+}
+
+

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ActivatedRoute, Router} from '@angular/router';
 @Component({
   selector: 'app-header',
   template:`
@@ -19,14 +19,16 @@ import { Component, OnInit } from '@angular/core';
         </div>
       </div>
 
-    <div class="search-bar-end">
-      <div class ="search-bar">
-        <input class="search-txt" type ="text" name="" placeholder="Type something">
-          <a class ="search-btn" href="#">
-            <i class="fas fa-search"></i>
-           </a>
-      </div>
+      <div class="search-bar-end">
+    <div class ="search-bar">
+      <input class="search-txt" type ="text" name="" placeholder="Type something" [(ngModel)]="searchTerm" >
+        <a class ="search-btn" href="#">
+          <i class="fas fa-search"></i>
+         </a>
     </div>
+</div>
+
+  
 
    
 
@@ -37,10 +39,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  title = 'Header';
 
-  constructor() { }
+  searchTerm:String="";
+  constructor(private route:ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.route.params.subscribe(params =>{
+      if(params.searchTerm)
+      this.searchTerm = params.searchTerm;
   }
+
+    )};
 
 }

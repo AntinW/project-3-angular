@@ -8,18 +8,26 @@ import { FooterComponent } from './footer/footer.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { GalleryPageComponent } from './gallery-page/gallery-page.component';
 
+import { RatingModule } from 'ng-starrating';
+import { FormsModule } from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
     HomepageComponent,
-    GalleryPageComponent
+    GalleryPageComponent,
+  
+    
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RatingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
