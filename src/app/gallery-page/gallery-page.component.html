@@ -1,1 +1,22 @@
-
+<section class ="hero is-primary is-fullheight has-text-centered">
+    <ul>
+    <li *ngFor="let cake of products">
+        
+        <a>
+            <img src="{{cake.imageUrl}}" alt="">
+            <div class="content">
+  
+                  <div class="name">
+                     {{cake.productName}}
+                  </div>
+  
+                 <div class ="description">
+                 {{cake.desc}}
+                 </div>
+  
+            </div>
+        </a>
+    </li>
+  </ul> 
+     
+  </section>
