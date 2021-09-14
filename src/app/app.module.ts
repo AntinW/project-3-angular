@@ -8,11 +8,20 @@ import {environment} from "../environments/environment";
 import {CheckoutService} from "./shared/services/checkout.service";
 import { CheckoutComponent } from './shopping/checkout/checkout.component';
 import {RouterModule} from "@angular/router";
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { GalleryPageComponent } from './gallery-page/gallery-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CheckoutComponent
+    HeaderComponent,
+    FooterComponent,
+    HomepageComponent,
+    GalleryPageComponent,
+    CheckoutComponent,
+    
   ],
   imports: [
     BrowserModule,
