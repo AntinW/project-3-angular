@@ -1,2 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata");
+
+/*Search Bar*/
+.search-bar{
+    position: absolute;
+    top: 20%;
+    left:83%;
+    transform: translate(-50%, -20%);
+    background: hsl(330, 100%, 74%);
+    height: 45px;
+    border-radius: 40px;
+    padding: 3px;
+}
+
+.search-bar:hover > .search-txt{
+    width:240px;
+    padding: 0px, 6px;
+}
+
+.search-bar:hover > .search-btn{
+    background: white;
+}
+.search-btn{
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color:white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+.footer2{
+    background-color: #f14668 ;
+    padding: 3rem 1.5rem 6rem;
+  }
+
+html{
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+    font-family: "Crimson", sans-serif;
+    color: black;
+
+}
 @import "~bootstrap/dist/css/bootstrap.css";
