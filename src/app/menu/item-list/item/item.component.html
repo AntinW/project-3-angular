@@ -1,1 +1,19 @@
-<p>item works!</p>
+<div style="padding: 10px;">
+    <div id="background1"></div>
+  <div class="card shadow-sm">
+      <!-- Images stored in assets folder -->
+      <!-- <img class="bd-placeholder-img card-img-top" width="auto" height="auto" [src]="productItem.image" alt="Cupcake" /> -->
+  
+      <img src="assets/image/menu/image01.jpg">
+      <div class="card-body">
+        <p class="card-text" style="text-align: center;"><strong>PRODUCT NAME</strong></p>
+        <p style="text-align: center;">Description of product</p>
+        <p style="text-align: center;">{{ 50 | currency: "R" }}</p>
+        <div class="text-center">
+          <div class="btn-group">
+            <button id="add-to-cart" type="button" class="btn btn-sm btn-primary product-btn d-flex">Add to cart</button>
+            <button type="button" class="btn btn-sm btn-secondary product-btn d-flex">Ingredients</button>
+          </div>
+        </div>
+      </div>
+  </div>
