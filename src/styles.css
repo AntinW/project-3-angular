@@ -78,6 +78,13 @@ body{
     background-position:center center;
   }
 
+#menu-card-size-item {
+    background-image: url('/assets/image/background.jpg') !important;
+    background-size: cover;
+    background-position:center center;
+    width: 80%;
+    height: 80%;
+}
 
 
 @import "~bootstrap/dist/css/bootstrap.css";
