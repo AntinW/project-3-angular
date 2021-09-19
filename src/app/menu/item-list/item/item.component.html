@@ -1,0 +1,19 @@
+<div style="padding-bottom: 20px;">
+    <div id="background1"></div>
+  <div class="card shadow-sm" id="menu-card-size-item">
+      <!-- Images stored in assets folder -->
+      <!-- <img class="bd-placeholder-img card-img-top" width="auto" height="auto" [src]="productItem.image" alt="Cupcake" /> -->
+  
+      <img class="bd-placeholder-img card-img" [src]=itemProduct.imageURL>
+      <div class="card-body">
+        <p class="card-text" style="text-align: center;"><strong>{{ itemProduct.name }}</strong></p>
+        <p style="text-align: center;">{{ itemProduct.description }}</p>
+        <p style="text-align: center;">{{ itemProduct.price | currency: "R" }}</p>
+        <div class="text-center">
+          <div class="btn-group">
+            <button id="add-to-cart" type="button" class="btn btn-sm btn-primary product-btn d-flex">Add to cart</button>
+            <button type="button" class="btn btn-sm btn-secondary product-btn d-flex">Ingredients</button>
+          </div>
+        </div>
+      </div>
+  </div>

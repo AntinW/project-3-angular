@@ -12,6 +12,11 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { GalleryPageComponent } from './gallery-page/gallery-page.component';
+import { MenuComponent } from './menu/menu.component';
+import { ItemListComponent } from './menu/item-list/item-list.component';
+import { ItemComponent } from './menu/item-list/item/item.component';
+import { CartComponent } from './menu/cart/cart.component';
+import { CartItemComponent } from './menu/cart/cart-item/cart-item.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +26,11 @@ import { GalleryPageComponent } from './gallery-page/gallery-page.component';
     HomepageComponent,
     GalleryPageComponent,
     CheckoutComponent,
+    MenuComponent,
+    ItemListComponent,
+    ItemComponent,
+    CartComponent,
+    CartItemComponent,
     
   ],
   imports: [
