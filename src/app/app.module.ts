@@ -17,6 +17,7 @@ import { ItemListComponent } from './menu/item-list/item-list.component';
 import { ItemComponent } from './menu/item-list/item/item.component';
 import { CartComponent } from './menu/cart/cart.component';
 import { CartItemComponent } from './menu/cart/cart-item/cart-item.component';
+import { SearchbarComponent } from './searchbar/searchbar.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { CartItemComponent } from './menu/cart/cart-item/cart-item.component';
     ItemComponent,
     CartComponent,
     CartItemComponent,
+    SearchbarComponent,
     
   ],
   imports: [
