@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
 import { GalleryPageComponent } from './gallery-page/gallery-page.component';
-import { ActivatedRoute } from '@angular/router';
 import { MenuComponent } from './menu/menu.component';
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
   { path:'', component: HomepageComponent},
@@ -13,7 +13,10 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes),
+    FormsModule,
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
