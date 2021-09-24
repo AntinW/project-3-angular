@@ -5,6 +5,9 @@ import { Product } from '../../shared/models/Product';
   providedIn: 'root'
 })
 export class ProductService {
+  private basePath = '/images';
+  file: File;
+  url = '';
 
   constructor() { }
 
