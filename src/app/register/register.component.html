@@ -1,0 +1,82 @@
+<body>
+    <div class = container>
+      <div class = "title">Registration</div>
+        <form action = "#" [formGroup]="registerForm">
+          <div class = "user-details">
+            <div class = "input-box">
+              <span class ="details">First Name  </span>
+              <input type ="text" formControlName= "fName"placeholder=" Enter Your First Name">
+              <div *ngIf = "firstname.invalid && firstname.touched">
+                <span class = "error" *ngIf= "firstname.errors?.required">First Name is Required</span>
+                <span class = "error" *ngIf= "firstname.errors?.pattern">Please Enter Valid First Name</span>
+              </div>
+            </div>
+            <div class = "input-box">
+              <span class ="details">Last Name  </span>
+              <input type ="text" formControlName= "lName" placeholder=" Enter Your Last Name">
+              <div *ngIf = "lastname.invalid && lastname.touched">
+                <span class = "error" *ngIf= "lastname.errors?.required">Last Name is Required</span>
+                <span class = "error" *ngIf= "lastname.errors?.pattern">Please Enter Valid Last Name</span>
+              </div>
+            </div>
+            <div class = "input-b">
+              <span class ="details">Username</span>
+              <input type ="text" formControlName= "uName" placeholder=" Enter Your Username">
+              <div *ngIf = "username.invalid && username.touched">
+                <span class = "error" *ngIf= "username.errors?.required">Username Required</span>
+                <span class = "error" *ngIf= "username.errors?.pattern">Please Enter Valid Username</span>
+              </div>
+            </div>
+            <div class = "input-box">
+              <span class ="details">Password </span>
+              <input type ="password" formControlName= "pWord" placeholder=" Enter Your Password">
+              <div *ngIf = "password.invalid && password.touched">
+                <span class = "error" *ngIf= "password.errors?.required">Password Required<br></span>
+                <span class = "error" *ngIf= "password.errors?.pattern">Please Enter Valid Password<br></span>
+                <span class = "error" *ngIf= "password.errors?.maxlength">Password to long<br></span>
+                <span class = "error" *ngIf= "password.errors?.minlength">Password too short<br></span>
+              </div>
+            </div>
+            <div class = "input-box">
+              <span class ="details">Confirm Password</span>
+              <input type ="password" formControlName = "confirm" placeholder=" Confirm Password">
+            </div>
+
+            <div class = "input-b">
+            <span class ="details">Address</span>
+            <input type ="text" formControlName= "addr" placeholder=" Enter Your Address">
+              <div *ngIf = "address.invalid && address.touched">
+                <span class = "error" *ngIf= "address.errors?.required">Address Required<br></span>
+                <span class = "error" *ngIf= "address.errors?.pattern">Please Enter Valid Address<br></span>
+              </div>
+          </div>
+            <div class = "input-box">
+              <span class ="details">Email</span>
+              <input type ="text" formControlName= "mail"placeholder=" Enter Your Email">
+              <div *ngIf = "mail.invalid && mail.touched">
+                <span class = "error" *ngIf= "mail.errors?.required">Email Required<br></span>
+                <span class = "error" *ngIf= "mail.errors?.pattern">Please Enter Valid Email<br></span>
+                <span class = "error" *ngIf= "mail.errors?.maxlength">Email to long<br></span>
+                <span class = "error" *ngIf= "mail.errors?.minlength">Email too short<br></span>
+              </div>
+            </div>
+
+            <div class = "input-box">
+              <span class ="details">Contact Number</span>
+              <input type ="text" formControlName= "num" placeholder=" Enter Your Contact Number">
+              <div *ngIf = "number.invalid && number.touched">
+                <span class = "error" *ngIf= "number.errors?.required">Contact Number Required<br></span>
+                <span class = "error" *ngIf= "number.errors?.pattern">Please Enter Valid Contact Number<br></span>
+                <span class = "error" *ngIf= "number.errors?.maxlength">Contact Number requires 10 digits<br></span>
+                <span class = "error" *ngIf= "number.errors?.minlength">Contact Number exceeds 10 digits<br></span>
+              </div>
+            </div>
+            <div class = "button">
+              <input type = "submit" value = "Register">
+            </div>
+
+          </div>
+        </form>
+
+    </div>
+</body>
