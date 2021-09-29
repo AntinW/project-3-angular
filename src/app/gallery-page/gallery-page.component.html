@@ -1,17 +1,17 @@
 <section class ="hero is-primary is-fullheight has-text-centered">
     <ul>
-    <li *ngFor="let cake of products">
+    <li *ngFor="let product of imagesFromDB">
         
         <a>
-            <img src="{{cake.imageUrl}}" alt="">
+            <img src="{{product.imageUrl}}" alt="">
             <div class="content">
   
                   <div class="name">
-                     {{cake.productName}}
+                     {{product.name}}
                   </div>
   
                  <div class ="description">
-                 {{cake.desc}}
+                 {{product.description}}
                  </div>
   
             </div>
