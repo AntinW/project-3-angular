@@ -1,0 +1,56 @@
+<section class ="hero is-primary is-fullheight has-text-centered">
+    
+    <div class="hero-body">
+            <table class="table table-bordered table-responsive-md table-striped text-center">
+                <thead>
+                    <tr>
+                        <th>Products</th>
+                    </tr>
+                    <tr>
+                        <th class="text-center">Product ID</th>
+                        <th class="text-center">Product Name</th>
+                        <th class="text-center">Price</th>
+                    </tr>
+                </thead>
+
+                <tbody  *ngFor="let item of database">
+                    <tr>
+                        <td class="pt-3-half">{{item.id}}</td>
+                        <td class="pt-3-half">{{item.name}}</td>
+                        <td class="pt-3-half">{{item.price}}</td>
+                    </tr>
+               </tbody>
+            </table>
+    </div>
+
+    <div class="hero-body">
+        <table class="table table-bordered table-responsive-md table-striped text-center">
+            <thead>
+                <tr>
+                    <th>Users</th>
+                </tr>
+                <tr>
+                    <th class="text-center">Address</th>
+                    <th class="text-center">Email</th>
+                    <th class="text-center">Name</th>
+                    <th class="text-center">Surname</th>
+                    <th class="text-center">Phone Number</th>
+                </tr>
+            </thead>
+
+            <tbody *ngFor="let users of ndatabase">
+                <tr>
+                    <td class="pt-3-half">{{users.address}}</td>
+                    <td class="pt-3-half">{{users.email}}</td>
+                    <td class="pt-3-half">{{users.firstName}}</td>                      
+                    <td class="pt-3-half">{{users.lastName}}</td>
+                    <td class="pt-3-half">{{users.phoneNumber}}</td>
+                </tr>
+            </tbody>
+        </table>
+</div>
+
+
+
+
+</section>
