@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router} from '@angular/router';
+import {CartService} from "../services/cart/cart.service";
+import {Observable} from "rxjs";
+import {ShoppingCart} from "../models/shopping-cart";
+import {switchMap} from "rxjs/operators";
 @Component({
   selector: 'app-header',
   templateUrl:'./header.component.html',
@@ -7,16 +11,20 @@ import { ActivatedRoute, Router} from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
   title = 'Header';
-
   searchTerm:String="";
-  constructor(private route:ActivatedRoute) { }
+  cart$: Observable<ShoppingCart>;
+  constructor(private route:ActivatedRoute,
+              private cartService: CartService) {
 
-  ngOnInit(): void {
+  }
+
+  async ngOnInit() {
     this.route.params.subscribe(params =>{
       if(params.searchTerm)
       this.searchTerm = params.searchTerm;
-  }
+    });
+    this.cart$ = await this.cartService.getCart();
 
-    )};
+  }
 
 }

@@ -19,6 +19,8 @@ import { CartComponent } from './menu/cart/cart.component';
 import { CartItemComponent } from './menu/cart/cart-item/cart-item.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
 import { AdminpageComponent } from './adminpage/adminpage.component';
+import {CartService} from "./services/cart/cart.service";
+import { ProductQuantityComponent } from './shared/product-quantity/product-quantity.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { AdminpageComponent } from './adminpage/adminpage.component';
     CartItemComponent,
     SearchbarComponent,
     AdminpageComponent,
-    
+    ProductQuantityComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -48,7 +51,8 @@ import { AdminpageComponent } from './adminpage/adminpage.component';
     ])
   ],
   providers: [
-    CheckoutService
+    CheckoutService,
+    CartService
   ],
   bootstrap: [AppComponent]
 })

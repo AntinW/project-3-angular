@@ -3,7 +3,7 @@
   <div class="card shadow-sm" id="menu-card-size-item">
       <!-- Images stored in assets folder -->
       <!-- <img class="bd-placeholder-img card-img-top" width="auto" height="auto" [src]="productItem.image" alt="Cupcake" /> -->
-  
+
       <img class="bd-placeholder-img card-img" [src]=itemProduct.imageURL>
       <div class="card-body">
         <p class="card-text" style="text-align: center;"><strong>{{ itemProduct.name }}</strong></p>
@@ -11,9 +11,30 @@
         <p style="text-align: center;">{{ itemProduct.price | currency: "R" }}</p>
         <div class="text-center">
           <div class="btn-group">
-            <button id="add-to-cart" type="button" class="btn btn-sm btn-primary product-btn d-flex">Add to cart</button>
-            <button type="button" class="btn btn-sm btn-secondary product-btn d-flex">Ingredients</button>
+            <button
+              *ngIf="getQuantity() === 0; else updateQuantity"
+              (click)="addToCart()"
+              id="add-to-cart" type="button"
+              class="btn btn-sm btn-secondary product-btn d-flex">Add to cart</button>
+            <ng-template #updateQuantity>
+              <div class = "row no-gutters">
+                <div class = "col-2">
+                  <button
+                    (click)="removeFromCart()"
+                    class="btn btn-secondary btn-block align-content-lg-start">-</button>
+                </div>
+                <div class="col text-center">
+                  {{getQuantity()}} in cart
+                </div>
+                <div class = "col-2">
+                  <button
+                    (click)="addToCart()"
+                    class="btn btn-secondary btn-block">+</button>
+                </div>
+              </div>
+            </ng-template>
           </div>
         </div>
       </div>
   </div>
+</div>
