@@ -17,20 +17,20 @@ export class GalleryPageComponent implements OnInit {
   products: Product[] = [];
 
 
-  constructor(db: AngularFireDatabase,private productService:ProductService, private route:ActivatedRoute) { 
+  constructor(db: AngularFireDatabase,private productService:ProductService, private route:ActivatedRoute, ) { 
     db.list('/gallery').valueChanges().subscribe(imagesFromDB => {
       this.imagesFromDB = imagesFromDB;
       console.log(imagesFromDB)
     })
   }
   ngOnInit(): void {
-    this.products = this.imagesFromDB;
-    this.route.params.subscribe(params => {
-      if (params.searchTerm)
-        this.products = this.productService.imagesFromDB.filter(product =>
-          product.name.toLowerCase().includes(params.searchTerm.toLowerCase()));
-      else
-        this.products = this.productService.imagesFromDB;
-    })
+    this.products = this.productService.getAll();
+  this.route.params.subscribe(params => {
+    if (params.searchTerm)
+      this.products = this.productService.getAll().filter(product =>
+        product.productName.toLowerCase().includes(params.searchTerm.toLowerCase()));
+    else
+      this.products = this.productService.getAll();
+  })
   }
 }
