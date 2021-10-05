@@ -3,3 +3,8 @@
     background-size: cover;
     background-position:center center;
   }
+
+  .heading{
+    font-size:50px;
+    color:purple;
+  }
