@@ -5,6 +5,7 @@ import { GalleryPageComponent } from './gallery-page/gallery-page.component';
 import { MenuComponent } from './menu/menu.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
+import { AdminpageComponent } from './adminpage/adminpage.component';
 import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
@@ -12,9 +13,9 @@ const routes: Routes = [
   {path: 'gallery-page',component: GalleryPageComponent},
   {path: 'search/:searchTerm', component: GalleryPageComponent},
   {path: 'menu',component: MenuComponent},
+  {path: 'adminpage', component: AdminpageComponent},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent}
-
 ];
 
 @NgModule({

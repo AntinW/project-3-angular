@@ -18,8 +18,10 @@ import { ItemComponent } from './menu/item-list/item/item.component';
 import { CartComponent } from './menu/cart/cart.component';
 import { CartItemComponent } from './menu/cart/cart-item/cart-item.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
+import { AdminpageComponent } from './adminpage/adminpage.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+
 
 @NgModule({
   declarations: [
@@ -35,6 +37,7 @@ import { RegisterComponent } from './register/register.component';
     CartComponent,
     CartItemComponent,
     SearchbarComponent,
+    AdminpageComponent,
     LoginComponent,
     RegisterComponent,
 

@@ -1,20 +1,16 @@
 import { Injectable,  } from '@angular/core';
 import { Product } from '../../shared/models/Product';
-
+import { AngularFireDatabase } from '@angular/fire/compat/database';
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
-  private basePath = '/images';
-  file: File;
-  url = '';
-
-  constructor() { }
+  imagesFromDB: any[];
 
   getAll():Product[]{
     return[
       {
-        productName: 'Choclate Brownies', 
+        productName: '',
         desc: 'Delicious choclate brownies with a melted center',
         stars: 4.5,
         imageUrl: '/assets/image/products/cake-1.jpg',
@@ -43,5 +39,11 @@ export class ProductService {
       },
                  
     ]
+
+
+  
   }
+
+  
+
 }
