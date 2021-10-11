@@ -21,6 +21,7 @@ import { SearchbarComponent } from './searchbar/searchbar.component';
 import { AdminpageComponent } from './adminpage/adminpage.component';
 import {CartService} from "./services/cart/cart.service";
 import { ProductQuantityComponent } from './shared/product-quantity/product-quantity.component';
+import {OrderService} from "./services/order.service";
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { ProductQuantityComponent } from './shared/product-quantity/product-quan
   ],
   providers: [
     CheckoutService,
-    CartService
+    CartService,
+    OrderService
   ],
   bootstrap: [AppComponent]
 })

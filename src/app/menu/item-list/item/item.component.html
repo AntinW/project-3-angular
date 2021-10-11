@@ -10,14 +10,15 @@
         <p style="text-align: center;">{{ itemProduct.description }}</p>
         <p style="text-align: center;">{{ itemProduct.price | currency: "R" }}</p>
         <div class="text-center">
-          <div *ngIf="shoppingCart" class="btn-group">
+          <div class="btn-group">
             <button
-              *ngIf="shoppingCart.getQuantity(itemProduct) === 0; else updateQuantity"
+              *ngIf="getQuantity() === 0; else updateQuantity"
               (click)="addToCart()"
               id="add-to-cart" type="button"
               class="btn btn-sm btn-secondary product-btn d-flex">Add to cart</button>
             <ng-template #updateQuantity>
-              <product-quantity [itemProduct]="itemProduct" [shopping-cart]="shoppingCart"></product-quantity>
+              <product-quantity [itemProduct]=itemProduct [shopping-cart]="shoppingCart">
+              </product-quantity>
             </ng-template>
           </div>
         </div>
