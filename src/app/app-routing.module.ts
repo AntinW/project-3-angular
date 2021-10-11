@@ -3,9 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
 import { GalleryPageComponent } from './gallery-page/gallery-page.component';
 import { MenuComponent } from './menu/menu.component';
+import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { AdminpageComponent } from './adminpage/adminpage.component';
 import {CartComponent} from "./menu/cart/cart.component";
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   { path:'', component: HomepageComponent},
@@ -13,7 +15,10 @@ const routes: Routes = [
   {path: 'search/:searchTerm', component: GalleryPageComponent},
   {path: 'menu',component: MenuComponent},
   {path: 'shopping-cart',component: CartComponent},
-  {path: 'adminpage', component: AdminpageComponent}
+  {path: 'adminpage', component: AdminpageComponent},
+  {path: 'adminpage', component: AdminpageComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'register', component: RegisterComponent}
 ];
 
 @NgModule({

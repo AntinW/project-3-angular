@@ -22,6 +22,9 @@ import { AdminpageComponent } from './adminpage/adminpage.component';
 import {CartService} from "./services/cart/cart.service";
 import { ProductQuantityComponent } from './shared/product-quantity/product-quantity.component';
 import {OrderService} from "./services/order.service";
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+
 
 @NgModule({
   declarations: [
@@ -39,6 +42,8 @@ import {OrderService} from "./services/order.service";
     SearchbarComponent,
     AdminpageComponent,
     ProductQuantityComponent,
+    LoginComponent,
+    RegisterComponent,
 
   ],
   imports: [
