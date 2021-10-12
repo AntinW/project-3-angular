@@ -21,9 +21,10 @@ import { SearchbarComponent } from './searchbar/searchbar.component';
 import { AdminpageComponent } from './adminpage/adminpage.component';
 import {CartService} from "./services/cart/cart.service";
 import { ProductQuantityComponent } from './shared/product-quantity/product-quantity.component';
+import { UserService} from './services/register/user.service';
 import {OrderService} from "./services/order.service";
-import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { RegisterSuccessComponent } from './register-success/register-success.component';
 
 
 @NgModule({
@@ -42,8 +43,8 @@ import { RegisterComponent } from './register/register.component';
     SearchbarComponent,
     AdminpageComponent,
     ProductQuantityComponent,
-    LoginComponent,
     RegisterComponent,
+    RegisterSuccessComponent,
 
   ],
   imports: [
@@ -59,6 +60,7 @@ import { RegisterComponent } from './register/register.component';
   providers: [
     CheckoutService,
     CartService,
+    UserService,
     OrderService
   ],
   bootstrap: [AppComponent]
