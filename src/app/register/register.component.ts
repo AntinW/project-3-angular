@@ -16,7 +16,7 @@ export class RegisterComponent implements OnInit
     public userApi: UserService,
     public fb: FormBuilder) { }
 
-
+message:boolean = false;
       ngOnInit(): void
 
      {
@@ -65,7 +65,8 @@ export class RegisterComponent implements OnInit
 
     submitForm(){
     this.userApi.AddUser(this.registerForm.value);
-
+    this.message = true;
+    this.registerForm.reset();0
     }
 
 get f() {
