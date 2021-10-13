@@ -24,13 +24,6 @@ export class GalleryPageComponent implements OnInit {
     })
   }
   ngOnInit(): void {
-    this.products = this.productService.getAll();
-  this.route.params.subscribe(params => {
-    if (params.searchTerm)
-      this.products = this.productService.getAll().filter(product =>
-        product.productName.toLowerCase().includes(params.searchTerm.toLowerCase()));
-    else
-      this.products = this.productService.getAll();
-  })
+   
   }
 }
