@@ -53,7 +53,7 @@ export class CheckoutComponent implements OnInit, OnDestroy {
       })
     };
     this.orderService.storeOrder(order);
-    window.alert("Order Placed")
+    window.alert("Order Placed. We'll contact you shortly.");
   }
 
 
