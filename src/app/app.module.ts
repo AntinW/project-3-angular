@@ -25,6 +25,7 @@ import { UserService} from './services/register/user.service';
 import {OrderService} from "./services/order.service";
 import { RegisterComponent } from './register/register.component';
 import { RegisterSuccessComponent } from './register-success/register-success.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 
 @NgModule({
@@ -45,6 +46,7 @@ import { RegisterSuccessComponent } from './register-success/register-success.co
     ProductQuantityComponent,
     RegisterComponent,
     RegisterSuccessComponent,
+    AboutUsComponent,
 
   ],
   imports: [

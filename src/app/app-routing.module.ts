@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { AdminpageComponent } from './adminpage/adminpage.component';
 import {CartComponent} from "./menu/cart/cart.component";
 import { RegisterComponent } from './register/register.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 const routes: Routes = [
   { path:'', component: HomepageComponent},
@@ -16,7 +17,8 @@ const routes: Routes = [
   {path: 'shopping-cart',component: CartComponent},
   {path: 'adminpage', component: AdminpageComponent},
   {path: 'adminpage', component: AdminpageComponent},
-  {path: 'register', component: RegisterComponent}
+  {path: 'register', component: RegisterComponent},
+  {path: 'about-us',component:AboutUsComponent}
 ];
 
 @NgModule({

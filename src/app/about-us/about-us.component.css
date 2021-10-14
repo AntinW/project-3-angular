@@ -1,0 +1,13 @@
+body {
+    display: flexbox;
+    margin: 0px;
+    padding: 100px;
+    font-family: Arial;
+    background: #ffe5e5;
+    background-image: url('/assets/images/cake.gif') ;
+    background-size: cover;
+    
+    background-blend-mode: darken;
+    background-position:center center;
+    width: 86.5%;
+  }
