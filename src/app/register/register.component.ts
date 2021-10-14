@@ -16,7 +16,6 @@ export class RegisterComponent implements OnInit
     public userApi: UserService,
     public fb: FormBuilder) { }
 
-
       ngOnInit(): void
 
      {
@@ -65,7 +64,8 @@ export class RegisterComponent implements OnInit
 
     submitForm(){
     this.userApi.AddUser(this.registerForm.value);
-
+    this.registerForm.reset();
+    window.alert("Successfully Registered for Future Promotion Notifications");
     }
 
 get f() {

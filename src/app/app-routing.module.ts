@@ -8,6 +8,7 @@ import { AdminpageComponent } from './adminpage/adminpage.component';
 import {CartComponent} from "./menu/cart/cart.component";
 import { RegisterComponent } from './register/register.component';
 
+
 const routes: Routes = [
   { path:'', component: HomepageComponent},
   {path: 'gallery-page',component: GalleryPageComponent},
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'adminpage', component: AdminpageComponent},
   {path: 'adminpage', component: AdminpageComponent},
   {path: 'register', component: RegisterComponent}
+
 ];
 
 @NgModule({
