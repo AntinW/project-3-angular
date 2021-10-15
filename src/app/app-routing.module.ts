@@ -11,7 +11,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 
 
 const routes: Routes = [
-  
+
   {path:'', component: HomepageComponent},
   {path: 'gallery-page',component: GalleryPageComponent},
   {path: 'search/:searchTerm', component: GalleryPageComponent},
@@ -19,10 +19,6 @@ const routes: Routes = [
   {path: 'shopping-cart',component: CartComponent},
   {path: 'adminpage', component: AdminpageComponent},
   {path: 'adminpage', component: AdminpageComponent},
-
-  {path: 'register', component: RegisterComponent}
-
-
   {path: 'register', component: RegisterComponent},
   {path: 'about-us',component:AboutUsComponent},
 
