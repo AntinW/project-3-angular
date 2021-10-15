@@ -10,7 +10,8 @@ import { RegisterComponent } from './register/register.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 
 const routes: Routes = [
-  { path:'', component: HomepageComponent},
+  
+  {path:'', component: HomepageComponent},
   {path: 'gallery-page',component: GalleryPageComponent},
   {path: 'search/:searchTerm', component: GalleryPageComponent},
   {path: 'menu',component: MenuComponent},
@@ -18,7 +19,7 @@ const routes: Routes = [
   {path: 'adminpage', component: AdminpageComponent},
   {path: 'adminpage', component: AdminpageComponent},
   {path: 'register', component: RegisterComponent},
-  {path: 'about-us',component:AboutUsComponent}
+  {path: 'about-us',component:AboutUsComponent},
 ];
 
 @NgModule({
@@ -29,3 +30,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+export const routingComponents = [AboutUsComponent]

@@ -8,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class AboutUsComponent implements OnInit {
 
   title = 'AboutUs';
+  router: any;
   constructor() { }
 
   ngOnInit(): void {
   }
+  onClick(){
+    this.router.navigate(['/About-Us']);
+  }
 }
+
+
+
 
