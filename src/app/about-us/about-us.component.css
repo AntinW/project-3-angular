@@ -1,0 +1,44 @@
+body {
+    display: flexbox;
+    margin: 0px;
+    padding: 100px;
+    font-family: Arial;
+    background: #ffe5e5;
+    background-image: url('/assets/image/cake.gif') !important;
+    background-size: cover;
+    background-position:center center;
+    background-blend-mode: darken;
+
+    
+    /* width: 105%; */
+  }
+
+  h3{
+    font-size: 20px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    color: rgb(0, 0, 0);  
+    animation: animate is ease-in-out infinite alternate;
+}
+
+p{
+    font-size: 17px;
+    line-height: 30px;
+    text-indent: 0px;
+    text-align-last: center;
+    text-transform: initial;
+    color: rgb(0, 0, 0);
+    animation: animate is ease-in-out infinite alternate;
+
+    margin: 0;
+    font-family: "Crimson", sans-serif;
+    color: black;
+}
+h1{
+  color: rgb(204, 199, 199);
+  border-style:outset
+  ;
+}
